@@ -1,0 +1,16 @@
+{%extends "base.html"%}
+{%block content%}
+<link rel="stylesheet" type="text/css" href="{url_for('static', filename='css/autorization.css')}"/>
+<div class="authorization">
+      <h4>Авторизация</h4>
+      <div>
+        <input name="surname" placeholder="Почта" class="form-control" />
+      </div>
+      <div>
+        <input name="surname" placeholder="Пароль" class="form-control" />
+      </div>
+      <div>
+        <button type="submit" class="btn_">Войти</button>
+      </div>
+    </div>
+{%endblock%}
