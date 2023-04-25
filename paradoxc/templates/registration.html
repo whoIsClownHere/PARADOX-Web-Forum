@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel= "stylesheet" type= "text/css" href="{{url_for('static',filename='styles/registration.css') }}">
+  <link rel= "stylesheet" type= "text/css" href="{{url_for('static',filename='styles/styles.css') }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+  <form method="post" class='login_form'>
+    <p id='registration'>Регистрация</p>
+      <input type="email" class="email_field" name="email" placeholder="Почта"/>
+      <input type="password" class="password_field" name="password" placeholder="Пароль"/>
+      <input type="text" class="username_field" name="username" placeholder="Имя пользователя"/>
+      <input type="text" class="about_yourself_field" name="about_yourself" placeholder="О себе"/>
+      <button type="submit" class='login_button'>Зарегестрироваться</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,72 @@
+body {
+  font-family: 'Inter';
+  background: #0c0c0d;
+  color: white;
+  margin: 0;
+}
+
+header {
+ display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+padding: 12px;
+
+background: #151617;
+border: 2px solid #222222;
+}
+
+header #search {
+  padding: 8px 12px;
+  gap: 10px;
+
+  background: #111111;
+  border: 2px solid #1E1E1E;
+  border-radius: 8px;
+
+  color: white;
+  width: 384px;
+
+  font-size: 16px;
+}
+
+header #search::placeholder {
+  color: #888;
+}
+
+header #search:focus {
+  outline: none;
+  border-color: #444;
+}
+
+header .profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 8px 12px;
+  font-size: 16px;
+  background: #111;
+  border: 2px solid #1e1e1e;
+  border-radius: 8px;
+
+  color: #ccc;
+
+  height: 40px;
+}
+
+header .profile img {
+  border-radius: 999px;
+  aspect-ratio: 1/1;
+  height: 100%;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  gap: 32px;
+  flex-wrap: wrap;
+  padding: 16px;
+  margin-bottom: 128px;
+}
+

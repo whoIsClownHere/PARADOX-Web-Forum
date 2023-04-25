@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel= "stylesheet" type= "text/css" href="{{url_for('static',filename='styles/new_post.css') }}">
+    <link rel= "stylesheet" type= "text/css" href="{{url_for('static',filename='styles/styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>Title</title>
+</head>
+<body>
+    <form method="post" class='login_form'>
+        <p>Добавить пост</p>
+        <input class='postname_field' name='name' placeholder='Название поста'/>
+        <textarea class='post_field' name='content' placeholder='Описание...'></textarea>
+        <button class='login_button'>Опубликовать</button>
+    </form>
+</body>
+</html>

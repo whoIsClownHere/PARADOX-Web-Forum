@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel= "stylesheet" type= "text/css" href="{{url_for('static',filename='styles/post_info.css') }}">
+  <link rel= "stylesheet" type= "text/css" href="{{url_for('static',filename='styles/styles.css') }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+  <a href="{{url_for('main')}}">PARADOXC</a>
+
+  <form>
+    <input id="search" name="search" placeholder="Поиск по сайту..." />
+  </form>
+  <div class="profile">
+    {% if logged_in == False %}
+      <a href="{{url_for('registration')}}">Sing up</a>
+    {% else %}
+      <a href="{{ url_for('account', username=logged_in.name, logged_in=logged_in) }}">{{ logged_in.name }}</a>
+    {% endif %}
+  </div>
+
+
+
+  {% if logged_in == False %}
+  <div class="profile">
+    <a href="{{url_for('login')}}">Login</a>
+  </div>
+  {% else %}
+    <a class='create_post' href="{{url_for('new_post')}}"> создать пост +</a>
+  {% endif %}
+</header>
+
+<main>
+    <div class="profile_block">
+      <div id="nickname"> {{ item.name }} </div>
+        <div id="profile_text"> {{ item.about }} </div>
+    </div>
+
+  {% for post in all_posts %}
+    <a class="posts" href="{{ url_for('post_view', postid=post.id) }}">
+      <div class="posts">
+          <figcaption>
+            <h3>
+              {{ post.title }}
+            </h3>
+            <p>
+              {{ post.content }}
+            </p>
+            <div class="metadata">
+              <div class="upvotes">
+                <i icon-name="chevron-up"></i>
+                <span>{{ post.likes_count }}</span>
+              </div>
+            </div>
+          </figcaption>
+      </div>
+    </a>
+  {% endfor %}
+
+</main>
+</body>
+</html>

@@ -1,0 +1,180 @@
+a {
+    color: white;
+    text-decoration:none;
+}
+
+a:active {
+    color: white;
+    text-decoration:none;
+}
+
+header .create_post {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 12px;
+    width: 157px;
+    height: 35px;
+    background: #111111;
+    border: 2px solid #1E1E1E;
+    border-radius: 8px;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #CCCCCC;
+}
+
+body {
+  background: #0c0c0d;
+  color: white;
+  margin: 0;
+}
+
+header {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+padding: 12px;
+
+background: #151617;
+border: 2px solid #222222;
+}
+
+#search {
+  padding: 8px 12px;
+  gap: 10px;
+
+  background: #111111;
+  border: 2px solid #1E1E1E;
+  border-radius: 8px;
+
+  color: white;
+  width: 384px;
+
+  font-size: 16px;
+}
+
+#search::placeholder {
+  color: #888;
+}
+
+#search:focus {
+  outline: none;
+  border-color: #444;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 8px 8px;
+  font-size: 12px;
+  background: #111;
+  border: 2px solid #1e1e1e;
+  border-radius: 8px;
+
+  color: #ccc;
+
+  height: 20px;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  gap: 32px;
+  flex-wrap: wrap;
+  padding: 16px;
+  margin-bottom: 128px;
+}
+
+.best_autors {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 16px;
+
+  width: 384px;
+  height: min-content;
+
+  background: #151617;
+  border: 2px solid #222222;
+  border-radius: 8px;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+  max-width: 700px;
+}
+
+.posts figure {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+
+  padding: 32px;
+
+  border: 2px solid #222;
+  background: #151617;
+  border-radius: 16px;
+}
+
+.posts figure > img {
+  width: 100%;
+  height: 256px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.posts figure .metadata {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.posts figure .metadata div {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 4px 12px;
+
+  border-radius: 999px;
+  font-weight: bold;
+
+  background: #222;
+  color: #888;
+}
+
+.metadata svg {
+  height: 16px;
+  width: 16px;
+  stroke-width: 3px;
+}
+
+.metadata .upvotes {
+  background: #0C281E!important;
+  color: #9BC1B3!important;
+}
+
+.metadata .comments {
+  background: #11174E!important;
+  color: #9297C3!important;
+}

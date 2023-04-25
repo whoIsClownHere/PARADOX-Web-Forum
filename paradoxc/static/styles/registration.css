@@ -1,0 +1,216 @@
+.login_form {
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-end;
+padding: 24px;
+gap: 16px;
+position: absolute;
+width: 901px;
+height: 480px;
+left: 25%;
+top: 10%;
+background: #151617;
+border: 2px solid #222222;
+border-radius: 8px;
+}
+
+header .create_post {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 12px;
+    width: 157px;
+    height: 35px;
+    background: #111111;
+    border: 2px solid #1E1E1E;
+    border-radius: 8px;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #CCCCCC;
+}
+
+.login_form #registration {
+width: 853px;
+height: 29px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+display: flex;
+align-items: center;
+color: #FFFFFF;
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+}
+
+.email_field {
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 12px 16px;
+gap: 10px;
+width: 853px;
+height: 43px;
+background: #111111;
+border: 2px solid #1E1E1E;
+border-radius: 8px;
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+color: white;
+}
+
+.email_field::placeholder {
+width: 48px;
+height: 19px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+color: #888888;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.password_field {
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 12px 16px;
+gap: 10px;
+width: 853px;
+height: 43px;
+background: #111111;
+border: 2px solid #1E1E1E;
+border-radius: 8px;
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+color: white;
+}
+
+.password_field::placeholder {
+width: 59px;
+height: 19px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+color: #888888;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.username_field {
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 12px 16px;
+gap: 10px;
+width: 853px;
+height: 43px;
+background: #111111;
+border: 2px solid #1E1E1E;
+border-radius: 8px;
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+color: white;
+}
+
+.username_field::placeholder {
+width: 147px;
+height: 19px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+color: #888888;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.about_yourself_field {
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 12px 16px;
+gap: 10px;
+width: 853px;
+height: 100px;
+background: #111111;
+border: 2px solid #1E1E1E;
+border-radius: 8px;
+flex: none;
+order: 5;
+flex-grow: 0;
+color: white;
+}
+
+.about_yourself_field::placeholder {
+width: 54px;
+height: 19px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+color: #888888;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.login_button {
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 16px;
+gap: 10px;
+width: 202px;
+height: 43px;
+background: #151617;
+border: 2px solid #1E1E1E;
+border-radius: 8px;
+flex: none;
+order: 6;
+flex-grow: 0;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+color: #888888;
+
+}
