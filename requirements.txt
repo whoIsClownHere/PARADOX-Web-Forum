@@ -1,2 +1,3 @@
 flask
 sqlalchemy
+pyinstaller~=5.7.0
